@@ -3,9 +3,9 @@ var pinID = 13;
 var durationMSec = 500;
 
 function blink(pin, duration) {
-    pin.write(1);
+    pin.write(1);      // LED ON
     setTimeout(function () {
-        pin.write(0);
+        pin.write(0);  // LED OFF
     }, duration);
 }
 
